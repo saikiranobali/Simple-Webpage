@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: navy;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        
+        nav {
+            margin-top: 10px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul li a:hover {
+            color: red;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        
+        .container h2 {
+            color: red;
+        }
+        
+        .container p {
+            color: red;
+        }
+        
+        .left-frame,
+        .right-frame {
+            width: calc((100% - 800px) / 2);
+            padding: 0 10px;
+        }
+        
+        .left-frame img,
+        .right-frame img {
+            width: 100%;
+            height: auto;
+        }
+        
+        footer {
+            background-color: navy;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="headerFrame">
+        <header>
+            <h1>CricTube</h1>
+            <nav>
+                <ul>
+                    <li><a href="sc.html">Explore</a></li>
+                    <li>
+                        <a href="re.html">Register</a>
+                    </li>
+                    <li><a href="lo.html">Login</a></li>
+                    <li><a href="t.html">Teams</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div id="contentFrame">
+        <div class="container">
+            <div class="left-frame">
+                <img src="l.jpeg" alt="Left Image">
+            </div>
+            <div class="middle-frame">
+                <h2>Welcome to CricTube</h2>
+                <p>Explore The Beauty of Biggest T20 Carnival in the History of Cricket</p>
+                <img src="i.jpg" alt="Middle Image">
+            </div>
+            <div class="right-frame">
+                <img src="t.jpg" alt="Right Image">
+            </div>
+        </div>
+    </div>
+
+    <div id="footerFrame">
+        <footer>
+            <p>&copy; 2024 CricTube. All rights reserved.</p>
+        </footer>w
+    </div>
+</body>
+
+</html>
